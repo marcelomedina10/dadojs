@@ -1,0 +1,32 @@
+{
+  "name": "dadojs",
+  "version": "0.1.0",
+  "description": "Lanzamiento de un dado al azar",
+  "type": "module",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "author": "Marcelo Medina",
+  "license": "MIT",
+  "homepage": "https://github.com/marcelomedina10/dadojs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcelomedina10/dadojs"
+  },
+  "scripts": {
+    "build-main": "tsc src/index.ts --outDir dist/cjs --module ES6",
+    "build-module": "tsc src/index.ts --outDir dist/esm",
+    "build": "npm run build-main && npm run build-module"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "helmet": "^6.0.1"
+  }
+}

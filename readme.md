@@ -1,6 +1,6 @@
 # Dadojs
 
-Tool for rolling a random six-sided die
+Tool for rolling a random six-sided dice
 
   [![NPM Version][npm-version-image]][npm-url]
   [![NPM Install Size][npm-install-size-image]][npm-install-size-url]

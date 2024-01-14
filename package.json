@@ -1,6 +1,6 @@
 {
   "name": "dadojs",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "Lanzamiento de un dado al azar",
   "main": "./dist/cjs/index.js",
   "author": "Marcelo Medina",
